@@ -1,0 +1,201 @@
+/* ========= Base & layout ========= */
+/* Rubric: Clean and coherent style, comments, visually appealing outputs */
+:root {
+  --blue: darkblue;
+  --lightblue: lightblue;
+  --accent: white;
+  --bg: white;
+  --text: black;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ========= Header & nav ========= */
+.site-header {
+  background: var(--blue);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.nav a[aria-current="page"] {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ========= Hero ========= */
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ========= Panels & cards ========= */
+.panel {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-left: 6px solid var(--blue);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.inline-note {
+  color: #333;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.gem-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  align-items: center;
+  background: var(--lightblue);
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+/* ========= Buttons ========= */
+.btn {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #0066cc;
+}
+
+/* ========= Regions layout ========= */
+.region-layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  flex: 1 1 240px;
+  background: #eef3f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.linklike {
+  background: none;
+  border: none;
+  color: var(--blue);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.region-cards {
+  flex: 3 1 520px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.card,
+.food-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.card img,
+.food-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.card h3,
+.food-card h3 {
+  color: var(--blue);
+  margin: 10px 0 6px;
+}
+
+/* ========= Food grid ========= */
+.filter-bar {
+  background: #f1f5fb;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e6edf7;
+  border-bottom: 1px solid #e6edf7;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.food-card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0066cc;
+}
+
+/* ========= List panel (events) ========= */
+.list-panel ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* ========= Footer ========= */
+.site-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+}
+
+/* ========= Responsive ========= */
+@media (max-width: 720px) {
+  .hero-overlay { width: 95%; }
+  .gem-card { grid-template-columns: 1fr; }
+}

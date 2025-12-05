@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Rubric: Dynamic text + loop + design output -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New York's Hidden Gems — Events & Activities</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>New York's Hidden Gems</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Explore by Region</a></li>
+        <li><a href="food.html">Food & Drinks</a></li>
+        <li><a href="events.html" aria-current="page">Events & Activities</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="panel">
+    <h2>Seasonal Highlights</h2>
+    <!-- Rubric: Dynamically placed text via JS -->
+    <p id="seasonalMsg" class="inline-note"></p>
+  </section>
+
+  <section class="panel">
+    <h2>Upcoming Events</h2>
+    <!-- Rubric: Loop to render list -->
+    <div id="eventList" class="list-panel"></div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Contact: info@nyhiddengems.com</p>
+    <p>Events list is illustrative; verify dates before travel.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

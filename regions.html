@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New York's Hidden Gems — Explore by Region</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>New York's Hidden Gems</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html" aria-current="page">Explore by Region</a></li>
+        <li><a href="food.html">Food & Drinks</a></li>
+        <li><a href="events.html">Events & Activities</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="region-layout">
+    <aside class="sidebar">
+      <h2>Regions</h2>
+      <ul>
+        <li><button class="linklike" onclick="showGem('capital')">Capital District</button></li>
+        <li><button class="linklike" onclick="showGem('hudson')">Hudson Valley</button></li>
+        <li><button class="linklike" onclick="showGem('western')">Western NY</button></li>
+        <li><button class="linklike" onclick="showGem('finger')">Finger Lakes</button></li>
+        <li><button class="linklike" onclick="showGem('north')">North Country</button></li>
+      </ul>
+      <!-- Rubric: User input via selection to customize the experience -->
+      <p id="regionGem" class="inline-note"></p>
+    </aside>
+
+    <section class="region-cards">
+      <h2>Hidden Gems by Region</h2>
+
+      <!-- Capital District (2 places) -->
+      <div class="card">
+        <img src="images/washington-park.jpg" alt="Washington Park">
+        <h3>Washington Park</h3>
+        <p>A historic park in Albany with gardens, paths, and seasonal festivals.</p>
+      </div>
+      <div class="card">
+        <img src="images/underground-railroad.jpg" alt="Underground Railroad Education Center">
+        <h3>Underground Railroad Education Center</h3>
+        <p>Museum dedicated to abolitionist history and hidden safe houses.</p>
+      </div>
+
+      <!-- Hudson Valley -->
+      <div class="card">
+        <img src="images/storm-king.jpg" alt="Storm King Art Center">
+        <h3>Storm King Art Center</h3>
+        <p>Outdoor sculpture park blending art and nature.</p>
+      </div>
+      <div class="card">
+        <img src="images/opus-40.jpg" alt="Opus 40">
+        <h3>Opus 40</h3>
+        <p>Hand-built stone sculpture park near Saugerties.</p>
+      </div>
+
+      <!-- Western NY -->
+      <div class="card">
+        <img src="images/ellicottville.jpg" alt="Ellicottville">
+        <h3>Ellicottville</h3>
+        <p>Charming ski town with boutiques, trails, and breweries.</p>
+      </div>
+      <div class="card">
+        <img src="images/eternal-flame.jpg" alt="Eternal Flame Falls">
+        <h3>Eternal Flame Falls</h3>
+        <p>Waterfall with a natural gas flame behind the cascade.</p>
+      </div>
+
+      <!-- Finger Lakes -->
+      <div class="card">
+        <img src="images/taughannock.jpg" alt="Taughannock Falls">
+        <h3>Taughannock Falls</h3>
+        <p>One of the tallest waterfalls east of the Rockies.</p>
+      </div>
+      <div class="card">
+        <img src="images/montezuma.jpg" alt="Montezuma Wildlife Refuge">
+        <h3>Montezuma Wildlife Refuge</h3>
+        <p>Bird sanctuary perfect for nature walks and migratory bird spotting.</p>
+      </div>
+
+      <!-- North Country -->
+      <div class="card">
+        <img src="images/ausable-chasm.jpg" alt="Ausable Chasm">
+        <h3>Ausable Chasm</h3>
+        <p>Dramatic sandstone gorge with rafting and hiking.</p>
+      </div>
+      <div class="card">
+        <img src="images/saranac-lake.jpg" alt="Saranac Lake">
+        <h3>Saranac Lake</h3>
+        <p>Adirondack town known for arts, lakefront charm, and winter carnival.</p>
+      </div>
+
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>Contact: info@nyhiddengems.com</p>
+    <p>References maintained per course guidelines.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

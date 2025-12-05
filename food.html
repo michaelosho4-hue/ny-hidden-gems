@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New York's Hidden Gems — Food & Drinks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>New York's Hidden Gems</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Explore by Region</a></li>
+        <li><a href="food.html" aria-current="page">Food & Drinks</a></li>
+        <li><a href="events.html">Events & Activities</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Filter bar (static for now, could be made dynamic later) -->
+  <section class="filter-bar">
+    <h2>Filter by Type</h2>
+    <button class="btn">☕ Coffee</button>
+    <button class="btn">🍔 Lunch</button>
+    <button class="btn">🍰 Dessert</button>
+  </section>
+
+  <!-- Dessert spot dynamic text injected via JS (array + random) -->
+  <section class="panel">
+    <p id="dessertSpot" class="inline-note"></p>
+  </section>
+
+  <section class="food-grid">
+    <!-- Coffee -->
+    <div class="food-card">
+      <img src="images/brew-ha-ha.jpg" alt="Brew Ha Ha Café">
+      <h3>Brew Ha Ha Café</h3>
+      <p>Quirky coffee shop in Albany with vintage décor and locally roasted beans.</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">View on Map</a>
+    </div>
+    <div class="food-card">
+      <img src="images/underground-coffee.jpg" alt="Underground Coffee & Ales">
+      <h3>Underground Coffee & Ales</h3>
+      <p>Cozy café in Highland offering espresso drinks and craft beer.</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">View on Map</a>
+    </div>
+
+    <!-- Lunch -->
+    <div class="food-card">
+      <img src="images/lunchbox-deli.jpg" alt="Lunchbox Deli">
+      <h3>Lunchbox Deli</h3>
+      <p>Hidden gem in Rochester serving stacked sandwiches and homemade soups.</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">View on Map</a>
+    </div>
+    <div class="food-card">
+      <img src="images/greenhouse-cafe.jpg" alt="Greenhouse Café">
+      <h3>Greenhouse Café</h3>
+      <p>Plant-filled lunch spot in Saratoga Springs with fresh wraps and smoothies.</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">View on Map</a>
+    </div>
+
+    <!-- Dessert -->
+    <div class="food-card">
+      <img src="images/sweet-sue.jpg" alt="Sweet Sue’s">
+      <h3>Sweet Sue’s</h3>
+      <p>Charming bakery in Phoenicia famous for oversized pancakes and homemade pies.</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">View on Map</a>
+    </div>
+    <div class="food-card">
+      <img src="images/vanilla-bean.jpg" alt="Vanilla Bean Bakery">
+      <h3>Vanilla Bean Bakery</h3>
+      <p>Tucked-away dessert shop in Syracuse offering cupcakes, cookies, and seasonal treats.</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">View on Map</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Contact: info@nyhiddengems.com</p>
+    <p>See README for references. No plagiarism.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

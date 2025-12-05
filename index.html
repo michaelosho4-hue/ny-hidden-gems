@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Rubric: Clean structure, external CSS, coherent style -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New York's Hidden Gems — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header + nav shared across pages -->
+  <header class="site-header">
+    <h1>New York's Hidden Gems</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="regions.html">Explore by Region</a></li>
+        <li><a href="food.html">Food & Drinks</a></li>
+        <li><a href="events.html">Events & Activities</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero area -->
+  <section class="hero">
+    <img src="images/ny-landscape.jpg" alt="Scenic view of New York State" class="hero-img">
+    <div class="hero-overlay">
+      <h2>Discover the hidden side of New York</h2>
+      <p>Unique places locals love — cozy cafes, quiet trails, and community gems.</p>
+    </div>
+  </section>
+
+  <!-- Gem of the Week with hover event -->
+  <section class="panel">
+    <h3>Gem of the Week</h3>
+    <!-- Rubric: Browser event to call a function (mouseover/mouseout) -->
+    <div id="gem" class="gem-card" onmouseover="highlightGem()" onmouseout="resetGem()">
+      <img src="images/storm-king.jpg" alt="Storm King Art Center">
+      <div>
+        <strong>Storm King Art Center</strong> — A massive outdoor sculpture park in the Hudson Valley.
+      </div>
+    </div>
+    <button class="btn" onclick="surprise()">Surprise Me</button>
+    <!-- Rubric: Other JS + Extras (alert) -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Contact: info@nyhiddengems.com</p>
+    <p>Images and inspiration properly referenced as per course policy.</p>
+  </footer>
+
+  <!-- External JS (Rubric: HTML not cluttered with JS, comments link HTML/JS) -->
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Rubric: User input to call function + conditionals + validation -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New York's Hidden Gems — Plan Your Trip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>New York's Hidden Gems</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Explore by Region</a></li>
+        <li><a href="food.html">Food & Drinks</a></li>
+        <li><a href="events.html">Events & Activities</a></li>
+        <li><a href="plan.html" aria-current="page">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="panel">
+    <h2>Personalized Greeting</h2>
+    <label for="userName">Your name:</label>
+    <input type="text" id="userName" placeholder="Enter your name">
+    <button class="btn" onclick="greetUser()">Submit</button>
+    <p id="greeting" class="inline-note"></p>
+    <!-- Rubric: user input calls function -->
+  </section>
+
+  <section class="panel">
+    <h2>Budget-based Suggestions</h2>
+    <label for="budget">Trip budget (USD):</label>
+    <input type="number" id="budget" placeholder="e.g., 120">
+    <button class="btn" onclick="checkBudget()">Check</button>
+    <p id="budgetMsg" class="inline-note"></p>
+    <!-- Rubric: conditional statements + validation -->
+  </section>
+
+  <section class="panel">
+    <h2>Quick Tools</h2>
+    <button class="btn" onclick="surprise()">Surprise Me</button>
+    <!-- Rubric: Other JS (alert) -->
+  </section>
+
+  <footer class="site-footer">
+    <p>Contact: info@nyhiddengems.com</p>
+    <p>Form examples for coursework; do not submit sensitive data.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
